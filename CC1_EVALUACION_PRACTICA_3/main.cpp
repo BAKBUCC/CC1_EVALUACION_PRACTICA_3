@@ -43,98 +43,98 @@ void ordenamiento(string *apellido, int tam)
 
 int main()
 {
-////    Problem 1. [10 puntos] Cree una clase llamada Empleado que incluya la siguiente informacion
-////    como datos miembro de la clase: nombre (string), apellido (string) y salario (tipo double).
-////    Implemente constructores de la clase. Proporcionar tambien funciones para la obtencio´n de
-////    cada dato miembro. Si el salario no es positivo, aju´stelo a 0. Cree dos objetos de empleado
-////    y muestre el salario anual de cada objeto. Despues bajarle el sueldo cada empleado, el 10 por
-////    ciento de su sueldo, y ﬁnalmente mostrar el salario anual de cada empleado.
-//
-//
-//    Empleado *empleados = new Empleado[2];
-//
-//    *empleados = Empleado("Jorge", "Alvedo", 200.50);
-//    *(empleados+1) = Empleado("Javier", "Gusto", -2003.9);
-//    Empleado *ptr_de_empleado = empleados;
-//    cout<<"Nombre: "<<ptr_de_empleado->obtenerNombre()<<endl;
-//    cout<<"Apellido: "<<ptr_de_empleado->obtenerApellido()<<endl;
-//    cout<<"Salario: "<<ptr_de_empleado->obtenerSalario()<<endl;
-//
-//    cout<<endl;
-//
-//    if (ptr_de_empleado->obtenerSalario()<0)
-//    {
-//        ptr_de_empleado->salarioNegativo_Nulo();
-//        cout<<"Salario Nuevo: "<<ptr_de_empleado->obtenerSalario()<<endl;
-//    }
-//    else
-//    {
-//        cout<<"Salario Anual sin sacarle el 10%: "<<ptr_de_empleado->salarioAnual()<<endl;
-//        ptr_de_empleado->salario_10Porcent();
-//        cout<<"Salario Anual 10% menos: "<<ptr_de_empleado->salarioAnual()<<endl;
-//    }
-//
-//    cout<<endl;
-//    cout<<endl;
-//    ptr_de_empleado++;
-//
-//    cout<<"Nombre: "<<ptr_de_empleado->obtenerNombre()<<endl;
-//    cout<<"Apellido: "<<ptr_de_empleado->obtenerApellido()<<endl;
-//    cout<<"Salario: "<<ptr_de_empleado->obtenerSalario()<<endl;
-//
-//    cout<<endl;
-//
-//    if (ptr_de_empleado->obtenerSalario()<0)
-//    {
-//        ptr_de_empleado->salarioNegativo_Nulo();
-//        cout<<"Salario Nuevo: "<<ptr_de_empleado->obtenerSalario()<<endl;
-//    }
-//    else
-//    {
-//        cout<<"Salario Anual sin sacarle el 10%: "<<ptr_de_empleado->salarioAnual()<<endl;
-//        ptr_de_empleado->salario_10Porcent();
-//        cout<<"Salario Anual 10% menos: "<<ptr_de_empleado->salarioAnual()<<endl;
-//    }
-//
-//
-//
-////    Problem 2. [10 puntos] Implemente un algoritmo de ordenamiento para un arreglo de la clase de
-////    la pregunta anterior. El ordenamiento debe ser en base al apellido, de la A a la Z.
-//
-//    string a[]={"luzvelocidad","soluminosidad"};
-//    string *ptra=a;
-//    char ptrb = ptra[0][0];
-//    cout<<ptrb<<endl;
-//    cout<<"¿cuantos empleados hay? ";
-//    short n_empleados;
-//    cin>>n_empleados;
-//    Empleado *empleados_2 = new Empleado[n_empleados];
-//    string *apellidos = new string[n_empleados];
-//
-//    for (short i=0; i<n_empleados; i++)
-//    {
-//        string nombre;
-//        string apellido;
-//        double salario;
-//        cout<<endl;
-//        cout<<"empleado "<< i+1 <<":"<<endl;
-//        cout<<"nombre: ";
-//        cin>>nombre;
-//        cout<<"apellido: ";
-//        cin>>apellido;
-//        cout<<"salario: ";
-//        cin>>salario;
-//        *empleados_2=Empleado(nombre,apellido,salario);
-//        *apellidos=empleados_2->obtenerApellido();
-//        empleados_2++;
-//        apellidos++;
-//    }
-//    apellidos-=n_empleados;
-//    printL(apellidos, n_empleados);
-//    cout<<endl;
-//    ordenamiento(apellidos,n_empleados);
-//    printL(apellidos, n_empleados);
-//    cout<<endl;
+//    Problem 1. [10 puntos] Cree una clase llamada Empleado que incluya la siguiente informacion
+//    como datos miembro de la clase: nombre (string), apellido (string) y salario (tipo double).
+//    Implemente constructores de la clase. Proporcionar tambien funciones para la obtencio´n de
+//    cada dato miembro. Si el salario no es positivo, aju´stelo a 0. Cree dos objetos de empleado
+//    y muestre el salario anual de cada objeto. Despues bajarle el sueldo cada empleado, el 10 por
+//    ciento de su sueldo, y ﬁnalmente mostrar el salario anual de cada empleado.
+
+
+    Empleado *empleados = new Empleado[2];
+
+    *empleados = Empleado("Jorge", "Alvedo", 200.50);
+    *(empleados+1) = Empleado("Javier", "Gusto", -2003.9);
+    Empleado *ptr_de_empleado = empleados;
+    cout<<"Nombre: "<<ptr_de_empleado->obtenerNombre()<<endl;
+    cout<<"Apellido: "<<ptr_de_empleado->obtenerApellido()<<endl;
+    cout<<"Salario: "<<ptr_de_empleado->obtenerSalario()<<endl;
+
+    cout<<endl;
+
+    if (ptr_de_empleado->obtenerSalario()<0)
+    {
+        ptr_de_empleado->salarioNegativo_Nulo();
+        cout<<"Salario Nuevo: "<<ptr_de_empleado->obtenerSalario()<<endl;
+    }
+    else
+    {
+        cout<<"Salario Anual sin sacarle el 10%: "<<ptr_de_empleado->salarioAnual()<<endl;
+        ptr_de_empleado->salario_10Porcent();
+        cout<<"Salario Anual 10% menos: "<<ptr_de_empleado->salarioAnual()<<endl;
+    }
+
+    cout<<endl;
+    cout<<endl;
+    ptr_de_empleado++;
+
+    cout<<"Nombre: "<<ptr_de_empleado->obtenerNombre()<<endl;
+    cout<<"Apellido: "<<ptr_de_empleado->obtenerApellido()<<endl;
+    cout<<"Salario: "<<ptr_de_empleado->obtenerSalario()<<endl;
+
+    cout<<endl;
+
+    if (ptr_de_empleado->obtenerSalario()<0)
+    {
+        ptr_de_empleado->salarioNegativo_Nulo();
+        cout<<"Salario Nuevo: "<<ptr_de_empleado->obtenerSalario()<<endl;
+    }
+    else
+    {
+        cout<<"Salario Anual sin sacarle el 10%: "<<ptr_de_empleado->salarioAnual()<<endl;
+        ptr_de_empleado->salario_10Porcent();
+        cout<<"Salario Anual 10% menos: "<<ptr_de_empleado->salarioAnual()<<endl;
+    }
+
+
+
+//    Problem 2. [10 puntos] Implemente un algoritmo de ordenamiento para un arreglo de la clase de
+//    la pregunta anterior. El ordenamiento debe ser en base al apellido, de la A a la Z.
+
+    string a[]={"luzvelocidad","soluminosidad"};
+    string *ptra=a;
+    char ptrb = ptra[0][0];
+    cout<<ptrb<<endl;
+    cout<<"¿cuantos empleados hay? ";
+    short n_empleados;
+    cin>>n_empleados;
+    Empleado *empleados_2 = new Empleado[n_empleados];
+    string *apellidos = new string[n_empleados];
+
+    for (short i=0; i<n_empleados; i++)
+    {
+        string nombre;
+        string apellido;
+        double salario;
+        cout<<endl;
+        cout<<"empleado "<< i+1 <<":"<<endl;
+        cout<<"nombre: ";
+        cin>>nombre;
+        cout<<"apellido: ";
+        cin>>apellido;
+        cout<<"salario: ";
+        cin>>salario;
+        *empleados_2=Empleado(nombre,apellido,salario);
+        *apellidos=empleados_2->obtenerApellido();
+        empleados_2++;
+        apellidos++;
+    }
+    apellidos-=n_empleados;
+    printL(apellidos, n_empleados);
+    cout<<endl;
+    ordenamiento(apellidos,n_empleados);
+    printL(apellidos, n_empleados);
+    cout<<endl;
 
 //    SEGUNDA PRUEBA;
 
